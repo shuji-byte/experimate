@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "2D84CC23-1BC0-44D7-98EA-1CFADBFDC6CB"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6860B559-CC1A-4FBB-A7ED-A6A570291BA5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OriginalApp/Subject/SubTimeLineViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "278"
+            endingLineNumber = "278"
+            landmarkName = "loadTimeLine(searchText:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C69DF32F-6CC5-4D50-9FAA-3E765DE857AA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OriginalApp/Subject/SubTimeLineViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "279"
+            endingLineNumber = "279"
+            landmarkName = "loadTimeLine(searchText:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C69DF32F-6CC5-4D50-9FAA-3E765DE857AA - 50e49b3a159fb9f9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Optional&lt;Swift.Array&lt;Any&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in OriginalApp.SubTimeLineViewController.loadTimeLine(searchText: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "OriginalApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kanekoshuji/Desktop/OriginalApp/OriginalApp/OriginalApp/Subject/SubTimeLineViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "215"
+                  endingLineNumber = "215"
+                  offsetFromSymbolStart = "828">
+               </Location>
+               <Location
+                  uuid = "C69DF32F-6CC5-4D50-9FAA-3E765DE857AA - 50e49b3a159fb9f9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Optional&lt;Swift.Array&lt;Any&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in OriginalApp.SubTimeLineViewController.loadTimeLine(searchText: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "OriginalApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kanekoshuji/Desktop/OriginalApp/OriginalApp/OriginalApp/Subject/SubTimeLineViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "215"
+                  endingLineNumber = "215"
+                  offsetFromSymbolStart = "952">
+               </Location>
+               <Location
+                  uuid = "C69DF32F-6CC5-4D50-9FAA-3E765DE857AA - a7d429413930d2fc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Optional&lt;Swift.Array&lt;Any&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in OriginalApp.SubTimeLineViewController.loadTimeLine(searchText: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "OriginalApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kanekoshuji/Desktop/OriginalApp/%E3%81%97%E3%82%85%E3%81%86%E3%81%A1%E3%82%83%E3%82%93_App/OriginalApp/Subject/SubTimeLineViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "291"
+                  endingLineNumber = "291"
+                  offsetFromSymbolStart = "780">
+               </Location>
+               <Location
+                  uuid = "C69DF32F-6CC5-4D50-9FAA-3E765DE857AA - a7d429413930d2fc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Optional&lt;Swift.Array&lt;Any&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in OriginalApp.SubTimeLineViewController.loadTimeLine(searchText: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "OriginalApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kanekoshuji/Desktop/OriginalApp/%E3%81%97%E3%82%85%E3%81%86%E3%81%A1%E3%82%83%E3%82%93_App/OriginalApp/Subject/SubTimeLineViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "291"
+                  endingLineNumber = "291"
+                  offsetFromSymbolStart = "904">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C718E592-D696-42A0-8564-1725716797CF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OriginalApp/Subject/MessageInputView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "4"
+            endingLineNumber = "4"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

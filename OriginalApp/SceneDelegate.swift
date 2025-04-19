@@ -13,9 +13,42 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+        let ud = UserDefaults.standard
+        let isLogin = ud.bool(forKey: "isLogin")
+        let isAdmin = ud.bool(forKey: "isAdmin")
+        // ログイン中だったらMain.Storyboardに遷移する。
+        if isLogin == true {
+            
+            if isAdmin == true{
+//                  LabMain
+                var window = UIWindow(windowScene: scene as! UIWindowScene)
+                self.window = window
+                let storyboard = UIStoryboard(name: "LabMain", bundle: Bundle.main)
+                let rootViewcontller = storyboard.instantiateViewController(withIdentifier: "RootTabBarController")
+                self.window?.rootViewController = rootViewcontller
+                self.window?.backgroundColor = UIColor.white
+                self.window?.makeKeyAndVisible()
+            }else if isAdmin == false{
+//                SubjectMain
+                var window = UIWindow(windowScene: scene as! UIWindowScene)
+                self.window = window
+                let storyboard = UIStoryboard(name: "SubjectMain", bundle: Bundle.main)
+                let rootViewcontller = storyboard.instantiateViewController(withIdentifier: "RootTabBarController")
+                self.window?.rootViewController = rootViewcontller
+                self.window?.backgroundColor = UIColor.white
+                self.window?.makeKeyAndVisible()
+            }
+        } else {
+        // ログインしてなかったらSignIn.Storyboardに遷移する。
+            var window = UIWindow(windowScene: scene as! UIWindowScene)
+            self.window = window
+            let storyboard = UIStoryboard(name: "SignIn", bundle: Bundle.main)
+            let rootViewcontller = storyboard.instantiateViewController(withIdentifier: "RootNavigationController")
+            self.window?.rootViewController = rootViewcontller
+            self.window?.backgroundColor = UIColor.white
+            self.window?.makeKeyAndVisible()
+        }
+       
         guard let _ = (scene as? UIWindowScene) else { return }
     }
 

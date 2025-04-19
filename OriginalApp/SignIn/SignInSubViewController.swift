@@ -6,24 +6,45 @@
 //
 
 import UIKit
+import NCMB
+import PKHUD
 
-class SignInSubViewController: UIViewController {
+class SignInSubViewController: UIViewController, UITextFieldDelegate {
+    @IBOutlet var userNameTextField: UITextField!
+    @IBOutlet var passWordTextField: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        userNameTextField.delegate = self
+        passWordTextField.delegate = self
+        
+       
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
-    */
-
+    
+    @IBAction func signIn() {
+        HUD.show(.progress)
+        NCMBUser.logInWithUsername(inBackground: userNameTextField.text, password: passWordTextField.text){ user, error in
+            if error != nil {
+                HUD.hide(animated: true)
+                print(error)
+            } else {
+                HUD.hide(animated: true)
+                let storyboard = UIStoryboard(name: "SubjectMain", bundle: Bundle.main)
+                let rootViewController = storyboard.instantiateViewController(withIdentifier: "RootTabBarController")
+                UIApplication.shared.windows.first { $0.isKeyWindow}?.rootViewController = rootViewController
+//                ログイン状態を保持
+                let ud = UserDefaults.standard
+                ud.set(true, forKey: "isLogin")
+                ud.set(false, forKey: "isAdmin")
+                print("SubjectMain")
+            }
+        }
+    }
 }
+
